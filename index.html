@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <meta name="comp1002-verify" content="track-alpha">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+    <title>Blinding Lights | The Weeknd</title>
+    <meta name="description" content="HTML5 song page for Blinding Lights by The Weeknd">
+</head>
+
+<body>
+
+    <!-- Header section containing the song title and navigation -->
+    <header>
+        <h1>Blinding Lights</h1>
+        <p>By The Weeknd</p>
+
+        <!-- Navigation links -->
+        <nav>
+            <ul>
+                <li><a href="#about">About the Song</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#lyrics">Lyrics</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content of the webpage -->
+    <main>
+
+        <!-- About section -->
+        <section id="about">
+            <h2>About the Song</h2>
+
+            <figure>
+                <img
+                    src="img/blinding-lights.jpg"
+                    alt="Blinding Lights song artwork by The Weeknd"
+                    width="300"
+                >
+                <figcaption>
+                    Blinding Lights by The Weeknd.
+                </figcaption>
+            </figure>
+
+            <p><strong>Song:</strong> Blinding Lights</p>
+            <p><strong>Artist:</strong> The Weeknd</p>
+            <p><strong>Album:</strong> After Hours</p>
+            <p><strong>Genre:</strong> Synth-pop and new wave</p>
+        </section>
+
+        <!-- Media section -->
+        <section id="media">
+            <h2>Song Media</h2>
+
+            <h3>Official Music Video</h3>
+
+            <!-- Embedded YouTube video -->
+            <iframe
+                width="560"
+                height="315"
+                src="https://youtu.be/4NRXx6U8ABQ?si=fp85LnzxFtQr1g0h"
+                title="Blinding Lights by The Weeknd official music video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- Lyrics section -->
+        <section id="lyrics">
+            <h2>Lyrics</h2>
+
+            <p>
+                The lyrics section is organized using semantic HTML headings
+                and paragraphs.
+            </p>
+
+            <article>
+                <h3>Verse 1</h3>
+                <p>“I've been tryna callI've been on my own for long enoughMaybe you can show me how to love, maybeI'm going through withdrawalsYou don't even have to do too muchYou can turn me on with just a touch, baby”</p>
+            </article>
+
+            <article>
+                <h3>Pre-Chorus</h3>
+                <p>I look around andSin City's cold and empty (oh)No one's around to judge me (oh)I can't see clearly when you're gone</p>
+            </article>
+
+            <article>
+                <h3>Chorus</h3>
+                <p>I said, ooh, I'm blinded by the lightsNo, I can't sleep until I feel your touch (touch)I said, ooh, I'm drowning in the nightOh, when I'm like this, you're the one I trustHey, hey, hey</p>
+            </article>
+
+            <article>
+                <h3>Verse 2</h3>
+                <p>'m running out of time'Cause I can see the sun light up the skySo I hit the road in overdrive, baby, ohThe city's cold and empty (oh)No one's around to judge me (oh)I can't see clearly when you're goneI said, ooh, I'm blinded by the lightsNo, I can't sleep until I feel your touchI said, ooh, I'm drowning in the nightOh, when I'm like this, you're the one I trustI'm just coming back to let you know (back to let you know)I could never say it on the phone (say it on the phone)Will never let you go this time (ooh)I said, ooh, I'm blinded by the lightsNo, I can't sleep until I feel your touchHey, hey, heyHey, hey, heyI said, ooh, I'm blinded by the lightsNo, I can't sleep until I feel your touch</p>
+            </article>
+        </section>
+
+        <!-- Favourite lyric feedback form -->
+        <section id="feedback">
+            <h2>Favourite Lyric Feedback</h2>
+
+            <form action="#" method="post">
+
+                <!-- Name input -->
+                <p>
+                    <label for="student-name">Your Name:</label>
+                    <input
+                        type="text"
+                        id="student-name"
+                        name="student-name"
+                        required
+                    >
+                </p>
+
+                <!-- Favourite part selection -->
+                <p>
+                    <label for="favourite-part">Favourite Part:</label>
+                    <select id="favourite-part" name="favourite-part" required>
+                        <option value="">Select a section</option>
+                        <option value="verse-1">Verse 1</option>
+                        <option value="pre-chorus">Pre-Chorus</option>
+                        <option value="chorus">Chorus</option>
+                        <option value="verse-2">Verse 2</option>
+                    </select>
+                </p>
+
+                <!-- Favourite lyric input -->
+                <p>
+                    <label for="favourite-lyric">Favourite Lyric:</label>
+                    <input
+                        type="text"
+                        id="favourite-lyric"
+                        name="favourite-lyric"
+                        required
+                    >
+                </p>
+
+                <!-- Feedback textarea -->
+                <p>
+                    <label for="feedback-message">Why do you like it?</label>
+                </p>
+                <p>
+                    <textarea
+                        id="feedback-message"
+                        name="feedback-message"
+                        rows="6"
+                        cols="50"
+                        required
+                    ></textarea>
+                </p>
+
+                <!-- Submit button -->
+                <p>
+                    <button type="submit">Submit Feedback</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2026 Blinding Lights Song Assignment</p>
+        <p>HTML assignment for COMP1002</p>
+    </footer>
+
+</body>
+</html>
