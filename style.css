@@ -1,0 +1,48 @@
+/* Lab Three - CSS Flexbox */
+
+
+.three-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.item {
+    background-color: lightblue;
+    padding: 30px;
+    width: 150px;
+    text-align: center;
+}
+
+
+.center-section {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-box {
+    background-color: lightgreen;
+    padding: 30px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
