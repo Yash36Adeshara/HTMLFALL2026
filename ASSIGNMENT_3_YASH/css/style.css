@@ -1,0 +1,136 @@
+/* General page layout. */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background-color: #060d15;
+  color: #d1dbe2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main { max-width: 1080px; margin: 0 auto; }
+
+.poster {
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  aspect-ratio: 1080 / 1600;
+  overflow: hidden;
+  background: #061522 url("../images/poster-background.jpg") center / 100% 100% no-repeat;
+}
+.poster p, .poster h1 { margin: 0; }
+.poster-heading {
+  position: absolute;
+  top: 4.7%; left: 15%; width: 70%;
+  text-align: center;
+}
+.poster-heading p {
+  color: #142c43;
+  font-size: 2.85cqw;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Cast and title. */
+.cast {
+  position: absolute;
+  top: 71.1%; left: 6.5%; width: 87%;
+  display: grid;
+  grid-template-columns: 0.8fr 0.9fr 1fr 1.2fr 1.3fr 1.7fr 1.4fr;
+  gap: 0.45cqw;
+  margin: 0; padding: 0;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cast li { min-width: 0; line-height: 0.98; }
+.cast span { display: block; font-size: 1.3cqw; }
+.cast strong { display: block; font-size: 2.65cqw; letter-spacing: -0.15cqw; }
+.director {
+  position: absolute;
+  top: 74.85%; left: 35%; width: 30%;
+  color: #8d9aa3;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.15cqw;
+  transform: scaleX(0.6);
+}
+h1 {
+  position: absolute;
+  top: 79.95%; left: 14.3%; width: 71.4%;
+  color: #e4e8ea;
+  font-size: 3.8cqw;
+  line-height: 1.15;
+  letter-spacing: 1.7cqw;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: 0 0.15cqw 0.2cqw #000;
+}
+
+/*  Lower billing area. */
+.presents {
+  position: absolute;
+  top: 87.05%; left: 25%; width: 50%;
+  color: #84949e;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2cqw;
+  transform: scaleX(0.5);
+}
+.credits {
+  position: absolute;
+  top: 88.55%; left: 6.5%; width: 87%;
+  color: #8a99a2;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.82cqw;
+  line-height: 1.9;
+  letter-spacing: -0.02cqw;
+}
+.credits p { white-space: normal; }
+.release-date {
+  position: absolute;
+  top: 95.5%; left: 39.5%; width: 21.5%;
+  color: #dfe8ec;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4.6cqw;
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+.movie-website {
+  position: absolute;
+  top: 95.65%; left: 60.5%;
+  color: #92a0a9;
+  font-size: 1.05cqw;
+  font-weight: 700;
+  letter-spacing: 0.12cqw;
+  text-transform: uppercase;
+}
+.studio-left, .studio-right { position: absolute; color: #87959d; font-size: 0.85cqw; }
+.studio-left { top: 94.90%; left: 10%; }
+.studio-right { top: 94.55%; right: 7%; font-size: 0.65cqw; }
+.copyright {
+  position: absolute;
+  top: 96.95%; left: 63%;
+  color: #71828c;
+  font-size: 0.70cqw;
+  text-transform: uppercase;
+}
+
+/*Supporting links do not move the poster text. */
+.movie-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+a { color: #b3e6ff; text-underline-offset: 0.25em; }
+a:hover { color: #fff; }
+a:focus-visible { outline: 3px solid #ffbc55; outline-offset: 5px; }
+@media (max-width: 550px) {
+  .movie-links { flex-direction: column; align-items: center; }
+}
